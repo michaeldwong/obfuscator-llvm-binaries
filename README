@@ -1,0 +1,40 @@
+
+Source code for c programs used: https://github.com/TheAlgorithms/C
+
+Obfuscator LLVM used with different bogus control flow options. For more details,
+see: https://github.com/obfuscator-llvm/obfuscator/wiki/Bogus-Control-Flow
+
+
+MacOS 10.12: Sierra- 2016
+
+clang -o BFS BFS.c -mllvm -sub -mllvm -fla -mllvm -bcf
+clang -o DFS DFS.c -mllvm -sub -mllvm -fla -mllvm -bcf
+clang -o Dijkstra Dijkstra.c -mllvm -sub -mllvm -fla -mllvm -bcf
+clang hash/hash_sdbm.c -o hash_sdbm   -mllvm  -sub -mllvm -fla -mllvm -bcf_loop=2
+clang games/tic_tac_toe.c  -o tic_tac_toe -mllvm -sub -mllvm -fla -mllvm -bcf_loop=3
+clang conversions/c_atoi_str_to_integer.c -o c_atoi_str_to_integer  -mllvm  -sub -ml
+lvm -fla -mllvm -bcf_loop=4
+clang conversions/hexadecimal_to_octal.c  -o hexadecimal_to_octal -mllvm  -sub -mllvm -fla -mllvm -bcf_loop=5
+clang searching/linear_search.c -o linear_search  -mllvm -sub -mllvm -fla -mllvm -bcf_prob=20
+clang sorting/quick_sort.c -o quick_sort  -mllvm -sub -mllvm -fla -mllvm -bcf_prob=40
+clang searching/fibonacci_search.c  -o fibonacci_search -mllvm -sub -mllvm -fla -mllvm -bcf_prob=60
+clang misc/cartesian_to_polar.c -o cartesian_to_polar -mllvm -sub -mllvm -fla -mllvm -bcf_prob=80
+clang hash/hash_crc32.c -o hash_crc32 -mllvm -sub -mllvm -fla -mllvm -bcf_prob=100
+
+Ubuntu 18.04
+
+
+clang searching/binary_search.c -o binary_search -mllvm -sub -mllvm -fla -mllvm -bcf
+clang sorting/bogo_sort.c -o bogo_sort -mllvm -sub -mllvm -fla -mllvm -bcf
+clang sorting/heap_sort.c -o heap_sort -mllvm -sub -mllvm -fla -mllvm -bcf
+clang sorting/radix_sort.c -o radix_sort -mllvm -sub -mllvm -fla -mllvm -bcf_loop=2
+clang data_structures/binary_trees/binary_search_tree.c -o binary_search_tree -mllvm -sub -mllvm -fla -mllvm -bcf_loop=3
+clang numerical_methods/gauss_elimination.c -o gauss_elimination -mllvm -sub -mllvm -fla -mllvm -bcf_loop=4
+clang numerical_methods/lu_decompose.c -o lu_decompose -mllvm -sub -mllvm -fla -mllvm -bcf_loop=5
+clang data_structures/hash_set/*.c -o hash_set -mllvm -sub -mllvm -fla -mllvm -bcf_prob=20
+clang data_structures/linked_list/doubly_linked_list.c  -o doubly_linked_list -mllvm -sub -mllvm -fla -mllvm -bcf_prog=40
+clang data_structures/dictionary/*.c -o dict  -mllvm -sub -mllvm -fla -mllvm -bcf_prob=60
+clang data_structures/trie/trie.c -o trie  -mllvm -sub -mllvm -fla -mllvm -bcf_prob=80
+clang data_structures/linked_list/singly_link_list_deletion.c -o singly_linked_list_deletion  -mllvm -sub -mllm -fla -mllvm -bcf_prob=100
+
+
