@@ -12,8 +12,7 @@ clang -o DFS DFS.c -mllvm -sub -mllvm -fla -mllvm -bcf
 clang -o Dijkstra Dijkstra.c -mllvm -sub -mllvm -fla -mllvm -bcf
 clang hash/hash_sdbm.c -o hash_sdbm   -mllvm  -sub -mllvm -fla -mllvm -bcf_loop=2
 clang games/tic_tac_toe.c  -o tic_tac_toe -mllvm -sub -mllvm -fla -mllvm -bcf_loop=3
-clang conversions/c_atoi_str_to_integer.c -o c_atoi_str_to_integer  -mllvm  -sub -ml
-lvm -fla -mllvm -bcf_loop=4
+clang conversions/c_atoi_str_to_integer.c -o c_atoi_str_to_integer  -mllvm  -sub -mllvm -fla -mllvm -bcf_loop=4
 clang conversions/hexadecimal_to_octal.c  -o hexadecimal_to_octal -mllvm  -sub -mllvm -fla -mllvm -bcf_loop=5
 clang searching/linear_search.c -o linear_search  -mllvm -sub -mllvm -fla -mllvm -bcf_prob=20
 clang sorting/quick_sort.c -o quick_sort  -mllvm -sub -mllvm -fla -mllvm -bcf_prob=40
